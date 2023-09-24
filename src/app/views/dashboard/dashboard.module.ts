@@ -13,24 +13,27 @@ import {
   NavModule,
   ProgressModule,
   TableModule,
-  TabsModule
+  TabsModule,
 } from '@coreui/angular';
 import { IconModule } from '@coreui/icons-angular';
 import { ChartjsModule } from '@coreui/angular-chartjs';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-
+import { ProductsComponent } from './product/products/products.component';
+import { AddProductsComponent } from './product/add.products/add.products.component';
+import { CustomersComponent } from './customer/customers/customers.component';
+import { AddCustomersComponent } from './customer/add-customers/add-customers.component';
 
 @NgModule({
-  imports: [
-    DashboardRoutingModule
+  imports: [DashboardRoutingModule, GridModule, FormModule, CardModule],
+  declarations: [
+    DashboardComponent,
+    ProductsComponent,
+    AddProductsComponent,
+    CustomersComponent,
+    AddCustomersComponent,
   ],
-  declarations: [DashboardComponent],
-  providers:[
-    fakeBackendProvider
-  ]
-
+  providers: [fakeBackendProvider],
 })
-export class DashboardModule {
-}
+export class DashboardModule {}

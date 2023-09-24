@@ -8,12 +8,12 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Products',
-    url: '/products',
+    url: 'dashboard/products',
     iconComponent: { name: 'cil-drop' },
   },
   {
     name: 'Customers',
-    url: '/customers',
+    url: 'dashboard/customers',
     iconComponent: { name: 'cil-pencil' },
   },
   // {

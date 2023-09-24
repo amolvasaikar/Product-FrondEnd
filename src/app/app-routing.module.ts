@@ -1,3 +1,4 @@
+import { AuthGuard } from './_helpers/auth.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -10,7 +11,7 @@ import { RegisterComponent } from './views/pages/register/register.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'dashboard',
     pathMatch: 'full',
   },
   {
@@ -26,6 +27,7 @@ const routes: Routes = [
           import('./views/dashboard/dashboard.module').then(
             (m) => m.DashboardModule
           ),
+          canActivate:[AuthGuard]
       },
       {
         path: 'pages',
@@ -62,7 +64,7 @@ const routes: Routes = [
       title: 'Register Page',
     },
   },
-  { path: '**', redirectTo: 'dashboard' },
+  // { path: '**', redirectTo: 'dashboard' },
 ];
 
 @NgModule({

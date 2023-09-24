@@ -24,6 +24,7 @@ export class AccountService {
     return this.userSubject.value;
   }
 
+  
   login(username: string, password: string) {
     return this.http
       .post<User>(`${environment.apiUrl}/users/authenticate`, {
