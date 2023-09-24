@@ -8,7 +8,21 @@ const routes: Routes = [
     path: '',
     component: DashboardComponent,
     data: {
-      title: $localize`Dashboard`,
+      title: 'Dashboard',
+    },
+  },
+  {
+    path: 'products',
+    component: DashboardComponent,
+    data: {
+      title: 'Products',
+    },
+  },
+  {
+    path: 'customers',
+    component: DashboardComponent,
+    data: {
+      title: 'Customers',
     },
   },
 ];

@@ -7,25 +7,24 @@ export const navItems: INavData[] = [
     iconComponent: { name: 'cil-speedometer' },
   },
   {
-    name: 'Colors',
-    url: '/theme/colors',
+    name: 'Products',
+    url: '/products',
     iconComponent: { name: 'cil-drop' },
   },
   {
-    name: 'Typography',
-    url: '/theme/typography',
-    linkProps: { fragment: 'someAnchor' },
+    name: 'Customers',
+    url: '/customers',
     iconComponent: { name: 'cil-pencil' },
   },
-  {
-    name: 'Base',
-    url: '/base',
-    iconComponent: { name: 'cil-puzzle' },
-    children: [
-      {
-        name: 'Accordion',
-        url: '/base/accordion',
-      },
-    ],
-  },
+  // {
+  //   name: 'Base',
+  //   url: '/base',
+  //   iconComponent: { name: 'cil-puzzle' },
+  //   children: [
+  //     {
+  //       name: 'Accordion',
+  //       url: '/base/accordion',
+  //     },
+  //   ],
+  // },
 ];

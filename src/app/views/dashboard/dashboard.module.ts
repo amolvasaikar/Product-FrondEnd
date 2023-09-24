@@ -1,3 +1,4 @@
+import { fakeBackendProvider } from './../../_helpers/fake-backend';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -25,7 +26,10 @@ import { DashboardComponent } from './dashboard.component';
   imports: [
     DashboardRoutingModule
   ],
-  declarations: [DashboardComponent]
+  declarations: [DashboardComponent],
+  providers:[
+    fakeBackendProvider
+  ]
 
 })
 export class DashboardModule {
